@@ -1,5 +1,9 @@
 node_modules
-.DS_Store
-dist
-dist-ssr
-*.local
+.env
+coverage
+coverage.json
+typechain
+
+#Hardhat files
+cache
+artifacts
