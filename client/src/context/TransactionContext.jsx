@@ -26,6 +26,7 @@ export const TransactionProvider = ({ children }) => {
     });
     const [isLoading, setIsLoading] = useState(false)
     const [transactionCount, setTransactionCount] = useState(localStorage.getItem('transactionCount'));
+    const [transactions, setTransactions] = useState([])
     
     const handleChange = (e, name) => {
         setFormData((prev) => ({...prev, [name]: e.target.value}));
