@@ -1,8 +1,9 @@
+import React from 'react'
 import {Navbar, Welcome, Footer, Transactions, Services, News} from './components'
 
-function App() {
 
-  return (
+const Home = () => {
+    return (
         <div className="min-h-screen">
           <div className="gradient-bg-welcome">
             <Navbar />
@@ -13,7 +14,7 @@ function App() {
           <News />
           <Footer/>
       </div>
-  )
+    )
 }
 
-export default App
+export default Home

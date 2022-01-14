@@ -1,14 +1,14 @@
 import React, {useState} from 'react'
 import {HiMenuAlt4} from 'react-icons/hi'
 import { AiOutlineClose } from 'react-icons/ai'
-
+import { Link } from "react-router-dom";
 import logo from '../images/logo.png'
 
-const NavbarItem = ({title, classProp}) => {
+const NavbarItem = ({title,link, classProp}) => {
     return (
-        <li className={`mx-4 cursor-pointer ${classProp}`}>
+        <Link to={link} className={`mx-4 cursor-pointer ${classProp}`}>
             {title}
-        </li>
+        </Link>
     )
 }
 
@@ -22,7 +22,7 @@ const Navbar = () => {
            <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
                 {
                     ['News', 'Exchanges', 'Cryptocurrencies'].map((navlink, index) => {
-                      return  <NavbarItem title={navlink} key={navlink + index} />
+                      return  <NavbarItem  link={navlink} title={navlink} key={navlink + index} />
                     })
                 }
            </ul>
@@ -43,7 +43,7 @@ const Navbar = () => {
                            </li>
                            {
                                ['News', 'Exchanges', 'Cryptocurrencies'].map((navlink, index) => {
-                                return  <NavbarItem title={navlink} classProp='my-2 text-lg' key={navlink + index} />
+                                return  <NavbarItem title={navlink} link={navlink} classProp='my-2 text-lg' key={navlink + index} />
                               })
                            }
                        </ul>

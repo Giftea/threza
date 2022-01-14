@@ -11,8 +11,10 @@ body {
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #4c4177;
-background-image: linear-gradient(315deg, #2406218a 40%, #102330 74%);
+  /* background-color: #4c4177;
+background-image: linear-gradient(315deg, #2406218a 40%, #102330 74%); */
+background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
 cursor: url('./images/Vector.png'), auto;
 }
 
@@ -46,7 +48,7 @@ cursor: url('./images/Vector.png'), auto;
 
 .text-gradient {
   background-color: #fff;
-  background-image: radial-gradient(at 4% 36%, hsla(0,0%,100%,1) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
+  background-image: radial-gradient(at 4% 36%, hsla(0,0%,100%,1) 0, transparent 53%), radial-gradient(at 100% 60%, #04619f 0, transparent 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
