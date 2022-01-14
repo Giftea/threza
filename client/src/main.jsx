@@ -16,10 +16,10 @@ ReactDOM.render(
     <TransactionsProvider>
     <NewsProvider>
       <Routes>
-        <Route path='/' element={<App/>} />
-        <Route path='/News' element={<News/>} />
-        <Route path='/Exchanges' element={<Exchanges/>} />
-        <Route path='/Cryptocurrencies' element={<Cryptocurrencies/>} />
+        <Route path='/' element={<App/>}/ >
+          <Route path='/News' element={<News/>} />
+          <Route path='/Exchanges' element={<Exchanges/>} />
+          <Route path='/Cryptocurrencies' element={<Cryptocurrencies/>} />
       </Routes>
     </NewsProvider>
   </TransactionsProvider>

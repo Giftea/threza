@@ -1,4 +1,5 @@
 import React from "react";
+import { Link} from "react-router-dom";
 
 import logo from "../images/logo.png";
 
@@ -9,9 +10,9 @@ const Footer = () => (
         <img src={logo} alt="logo" className="w-32" />
       </div>
       <div className="flex flex-1 justify-evenly items-center flex-wrap sm:mt-0 mt-5 w-full">
-        <p className="text-white text-base text-center mx-2 cursor-pointer">News</p>
-        <p className="text-white text-base text-center mx-2 cursor-pointer">Exchanges</p>
-        <p className="text-white text-base text-center mx-2 cursor-pointer">Cryptocurrencies</p>
+        <Link to ='/News' className="text-white text-base text-center mx-2 cursor-pointer">News</Link>
+        <Link to='/Exchanges' className="text-white text-base text-center mx-2 cursor-pointer">Exchanges</Link>
+        <Link to='/Cryptocurrencies' className="text-white text-base text-center mx-2 cursor-pointer">Cryptocurrencies</Link>
       </div>
     </div>
 

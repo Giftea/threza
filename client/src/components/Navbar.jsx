@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {HiMenuAlt4} from 'react-icons/hi'
 import { AiOutlineClose } from 'react-icons/ai'
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import logo from '../images/logo.png'
 
 const NavbarItem = ({title,link, classProp}) => {
@@ -17,14 +17,15 @@ const Navbar = () => {
     return (
         <nav className='w-full flex pl-20 justify-between items-center py-4'>
            <div className='md:flex-[0.5] flex-initial justify-center items-center'>
+               <Link to='/'>
                <img src={logo} alt ='Threza' className='w-32 cursor-pointer' />
+               
+               </Link>
            </div>
            <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
-                {
-                    ['News', 'Exchanges', 'Cryptocurrencies'].map((navlink, index) => {
-                      return  <NavbarItem  link={navlink} title={navlink} key={navlink + index} />
-                    })
-                }
+             <Link to ='/News' className="text-white text-base text-center mx-2 cursor-pointer">News</Link>
+             <Link to='/Exchanges' className="text-white text-base text-center mx-2 cursor-pointer">Exchanges</Link>
+                <Link to='/Cryptocurrencies' className="text-white text-base text-center mx-2 cursor-pointer">Cryptocurrencies</Link>
            </ul>
            <div className="flex relative">
                {
@@ -41,11 +42,9 @@ const Navbar = () => {
                            <li className='text-xl w-full my-2'>
                                 <AiOutlineClose fontSize={28} className='text-white md:hidden cursor-pointer' onClick={() => setToggleMenu(false) } />
                            </li>
-                           {
-                               ['News', 'Exchanges', 'Cryptocurrencies'].map((navlink, index) => {
-                                return  <NavbarItem title={navlink} link={navlink} classProp='my-2 text-lg' key={navlink + index} />
-                              })
-                           }
+                             <Link to ='/News' className="mx-4 my-2 text-lg cursor-pointer">News</Link>
+                             <Link to='/Exchanges' className="mx-4 my-2 text-lg cursor-pointer">Exchanges</Link>
+                             <Link to='/Cryptocurrencies' className="mx-4 my-2 text-lg cursor-pointer">Cryptocurrencies</Link>
                        </ul>
                    )
                }
