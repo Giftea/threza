@@ -1,11 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from './App'
-import News from './pages/News'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { TransactionsProvider } from './context/TransactionContext'
 import { NewsProvider } from './context/NewsContext'
+import App from './App'
+import News from './pages/News'
+import Exchanges from './pages/Exchanges'
+import Cryptocurrencies from './pages/Cryptocurrencies'
+
 
 
 ReactDOM.render(
@@ -15,6 +18,8 @@ ReactDOM.render(
       <Routes>
         <Route path='/' element={<App/>} />
         <Route path='/News' element={<News/>} />
+        <Route path='/Exchanges' element={<Exchanges/>} />
+        <Route path='/Cryptocurrencies' element={<Cryptocurrencies/>} />
       </Routes>
     </NewsProvider>
   </TransactionsProvider>
