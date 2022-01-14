@@ -6,5 +6,6 @@ export {default as Transactions} from './Transactions';
 export {default as Welcome} from './Welcome';
 export {default as NewsCard} from './NewCard';
 export {default as CryptoCard} from './CryptoCard';
+export {default as Stats} from './Stats';
 
 

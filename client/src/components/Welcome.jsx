@@ -22,7 +22,7 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 
 const Welcome = () => {
   const { currentAccount, connectWallet, handleChange, sendTransaction, formData, isLoading } = useContext(TransactionContext);
-
+ console.log(currentAccount)
   const handleSubmit = (e) => {
     const { addressTo, amount, keyword, message } = formData;
 
@@ -63,8 +63,8 @@ const Welcome = () => {
         </div>
 
         <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 mt-10">
-          <Tilt options={{ max: 20, scale: 1.3, speed: 200 }}>
-          <div className="p-3 flex justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-full my-5 eth-card .white-glassmorphism ">
+          <Tilt options={{ max: 20, scale: 1.3, speed: 200 }} className='sm:w-72 w-full'>
+          <div className="p-3 flex justify-end items-start flex-col rounded-xl h-40  my-5 eth-card .white-glassmorphism ">
             <div className="flex justify-between flex-col w-full h-full">
               <div className="flex justify-between items-start">
                 <div className="w-10 h-10 rounded-full border-2 border-white flex justify-center items-center">
