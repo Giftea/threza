@@ -26,4 +26,4 @@ const useFetch = ({keyword}) => {
     return gifUrl;
 }
 
-export default useFetch
+export default useFetch;
