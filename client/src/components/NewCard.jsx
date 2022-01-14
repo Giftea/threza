@@ -8,11 +8,11 @@ const News = () => {
   const { news } = useContext(NewsContext);
   console.log(news)
   return (
-    <div className='flex flex-wrap justify-center items-center '>
+    <div className='flex flex-wrap justify-between items-center '>
          {news.map((singleNews) => {
            return (
             <a href={singleNews.url} target="_blank" rel="noreferrer">
-               <div  className='blue-glassmorphism pt-7 cursor-pointer m-4 flex flex-1
+               <div  className='blue-glassmorphism pt-7 cursor-pointer md:m-4 my-3 flex flex-1
                   2xl:min-w-[450px]
                   2xl:max-w-[500px]
                   sm:min-w-[270px]

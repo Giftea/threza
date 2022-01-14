@@ -15,7 +15,7 @@ const NavbarItem = ({title,link, classProp}) => {
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false)
     return (
-        <nav className='w-full flex pl-20 justify-between items-center py-4'>
+        <nav className='w-full flex lg:pl-20 px-5 justify-between items-center py-4'>
            <div className='md:flex-[0.5] flex-initial justify-center items-center'>
                <Link to='/'>
                <img src={logo} alt ='Threza' className='w-32 cursor-pointer' />

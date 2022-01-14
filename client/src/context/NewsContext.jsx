@@ -8,7 +8,7 @@ export const NewsProvider =  ({children}) => {
     const [data,setData] =useState('');
 
    const fetchNews = async () => {
-        fetch("https://bing-news-search1.p.rapidapi.com/news/search?q=ethereum&safeSearch=Off&textFormat=Raw&freshness=Day&count=10", {
+        fetch("https://bing-news-search1.p.rapidapi.com/news/search?q=ethereum&safeSearch=Off&textFormat=Raw&freshness=Day&count=12", {
             "method": "GET",
             "headers": {
                 "x-bingapis-sdk": "true",
