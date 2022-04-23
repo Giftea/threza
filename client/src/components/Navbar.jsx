@@ -24,8 +24,8 @@ const Navbar = () => {
            </div>
            <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
              <Link to ='/News' className="text-white text-base text-center navlink mx-5 cursor-pointer">News</Link>
-             <Link to='/Exchanges' className="text-white text-base text-center navlink mx-5 cursor-pointer">Exchanges</Link>
-                <Link to='/Cryptocurrencies' className="text-white text-base navlink text-center mx-5 cursor-pointer">Cryptocurrencies</Link>
+             {/* <Link to='/Exchanges' className="text-white text-base text-center navlink mx-5 cursor-pointer">Exchanges</Link>
+                <Link to='/Cryptocurrencies' className="text-white text-base navlink text-center mx-5 cursor-pointer">Cryptocurrencies</Link> */}
            </ul>
            <div className="flex relative">
                {
@@ -43,8 +43,8 @@ const Navbar = () => {
                                 <AiOutlineClose fontSize={28} className='text-white md:hidden cursor-pointer' onClick={() => setToggleMenu(false) } />
                            </li>
                              <Link to ='/News' className="mx-4 my-2 text-lg cursor-pointer">News</Link>
-                             <Link to='/Exchanges' className="mx-4 my-2 text-lg cursor-pointer">Exchanges</Link>
-                             <Link to='/Cryptocurrencies' className="mx-4 my-2 text-lg cursor-pointer">Cryptocurrencies</Link>
+                             {/* <Link to='/Exchanges' className="mx-4 my-2 text-lg cursor-pointer">Exchanges</Link>
+                             <Link to='/Cryptocurrencies' className="mx-4 my-2 text-lg cursor-pointer">Cryptocurrencies</Link> */}
                        </ul>
                    )
                }

@@ -42,6 +42,7 @@ background-image: linear-gradient(147deg, #000000 0%, #04619f 154%);
     radial-gradient(at 27% 71%, hsla(336,91%,65%,1) 0, transparent 49%), 
     radial-gradient(at 53% 75%, hsla(174,94%,68%,1) 0, transparent 45%);
     cursor: url('./images/point.png'), auto;
+    width: 50%;
 }
 
 .text-gradient {
@@ -88,9 +89,7 @@ background-image: linear-gradient(147deg, #000000 0%, #04619f 154%);
 }
 
 .stats-main-container{
-  display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+
     display: flex;
     margin-right: -16px;
     margin-left: -16px;
@@ -168,11 +167,30 @@ opacity: 0.95;
   box-shadow: inset 0 0 0 1px #2c2c3d;
 }
 
+@media screen and (max-width:768px) {
+  .eth-card{
+    width: 80%;
+  }
+
+  .stats-main-container{
+    flex-wrap: wrap;
+  }
+
+  .stats-block-container{
+    width: 50%;
+  }
+}
+
 @media screen and (max-width:400px) {
   .hero-list{
     font-size: 10px;
   }
+  .stats-block-container{
+    width: 100%;
+  }
 }
+
+
 
 .accordion__button{
   background: rgb(39, 51, 89, 0.4);

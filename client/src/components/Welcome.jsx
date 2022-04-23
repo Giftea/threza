@@ -6,7 +6,6 @@ import { BsInfoCircle } from "react-icons/bs";
 import { TransactionContext } from "../context/TransactionContext";
 import { shortenAddress } from "../utils/shortenAddress";
 import { Loader } from ".";
-import Tilt from 'react-tilt';
 
 
 const Input = ({ placeholder, name, type, value, handleChange }) => (
@@ -63,7 +62,7 @@ const Welcome = () => {
         </div>
 
         <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 mt-10">
-          <Tilt options={{ max: 20, scale: 1.3, speed: 200 }} className='sm:w-72 w-full'>
+          <>
           <div className="p-3 flex justify-end items-start flex-col rounded-xl h-40  my-5 eth-card .white-glassmorphism ">
             <div className="flex justify-between flex-col w-full h-full">
               <div className="flex justify-between items-start">
@@ -82,7 +81,7 @@ const Welcome = () => {
               </div>
             </div>
           </div>
-          </Tilt >
+          </ >
           <div className="p-5 sm:w-96 w-full mt-4 flex flex-col justify-start items-center white-glassmorphism">
             <Input placeholder="Address To" name="addressTo" type="text" handleChange={handleChange} />
             <Input placeholder="Amount (ETH)" name="amount" type="number" handleChange={handleChange} />

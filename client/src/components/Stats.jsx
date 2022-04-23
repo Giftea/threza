@@ -28,19 +28,19 @@ const Stats = () => {
   const data = [
       {
           title: 'Total Cryptocurrencies',
-          value: total
+          value: '19,063' 
       },
       {
         title: 'Total Market Cap',
-        value: totalMarketCap
+        value: '$1,848,382,509,583'
       },
       {
         title: 'Total 24hr Volume',
-        value: total24hVolume
+        value: '$67,802,715,171'
     },
     {
-      title: 'Total Markets',
-      value: totalMarkets
+      title: 'Exchanges',
+      value: 511
     },
   ]
     return (
