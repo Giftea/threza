@@ -22,11 +22,11 @@ const Navbar = () => {
                
                </Link>
            </div>
-           <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
+{/*            <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
              <Link to ='/News' className="text-white text-base text-center navlink mx-5 cursor-pointer">News</Link>
-             {/* <Link to='/Exchanges' className="text-white text-base text-center navlink mx-5 cursor-pointer">Exchanges</Link>
-                <Link to='/Cryptocurrencies' className="text-white text-base navlink text-center mx-5 cursor-pointer">Cryptocurrencies</Link> */}
-           </ul>
+             <Link to='/Exchanges' className="text-white text-base text-center navlink mx-5 cursor-pointer">Exchanges</Link>
+                <Link to='/Cryptocurrencies' className="text-white text-base navlink text-center mx-5 cursor-pointer">Cryptocurrencies</Link>
+           </ul> */}
            <div className="flex relative">
                {
                    toggleMenu ?
